@@ -89,6 +89,8 @@
   | **2. n8n**([n8n.io](https://n8n.io/)) | 개발자 / 조건 분기·로직 제어가 중요한 경우 | - 자유도 매우 높음- 오픈소스 / 무료 가능 | - 설치형이면 인프라 필요, 처음엔 약간 복잡 |
   | **3. Slack Workflow Builder**([Slack 공식 기능](https://slack.com/help/articles/360035692513)) | 슬랙만으로 끝내고 싶은 경우 / 슬랙 외부 연결 최소화 | - 슬랙 UI 안에서만 구성 가능- 무설치/무개발 | - GPT 연결하려면 Make 등과 연동 필요 (단독으론 부족) |
 
+### 퀘스트 4. 베이직 체크인처럼, Chat-GPT에게 하루를 시작하면서 힘을 얻을 수 있는 명언이나 짧은 유튜브 영상을 추천받기
+
 ### 구현 사례
 
 - ![슬랙 워크플로우 빌더](https://www.reddit.com/r/OpenAI/comments/1fdprdj/i_created_a_gptpowered_slack_chatbot_to_onboard/?utm_source=chatgpt.com)
