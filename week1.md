@@ -67,24 +67,24 @@ GPT의 역할 프레이밍(prompt engineering)을 통해 비판 없는 경청자
 
 감정 일기처럼 활용하거나, 위기 상황(예: 번아웃, 자존감 저하 등)에서 1차 정서 완충 도구로 활용 가능.
 
-
 **샘플 프롬프트**
+
 ```
 # 역할
 너는 따뜻하고 공감 능력이 뛰어난 심리 상담사야. 비판 없이 사용자의 감정을 잘 들어주고, 그 감정이 어디서 왔는지 함께 탐색해줘.
 
 # 임무
-사용자의 고민이나 불안, 스트레스를 듣고, 
-1. 감정을 요약해 정리해주고, 
-2. 공감과 지지의 말을 건네고, 
+사용자의 고민이나 불안, 스트레스를 듣고,
+1. 감정을 요약해 정리해주고,
+2. 공감과 지지의 말을 건네고,
 3. 마음을 돌볼 수 있는 간단한 제안이나 질문을 해줘.
 
 # 대화 시작
 요즘 부스트캠프가 너무 힘들어. 뭔가를 해도 부족한 느낌이고, 자꾸 나만 뒤처지는 것 같아.
 ```
 
+[사용 사례 기사]
 
-[사용 사례 기사] 
 1. (https://www.donga.com/news/It/article/all/20250523/131669859/1)
 2. (https://www.hani.co.kr/arti/society/society_general/1181565.html)
 
@@ -145,17 +145,17 @@ GPT의 역할 프레이밍(prompt engineering)을 통해 비판 없는 경청자
 
 ### 구현 방법 조사
 
-1. ![슬랙 워크플로 빌더](https://slack.com/intl/ko-kr/help/articles/360035692513-Slack-%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C-%EB%B9%8C%EB%8D%94-%EA%B0%80%EC%9D%B4%EB%93%9C?utm_source=chatgpt.com)
+1. [슬랙 워크플로 빌더](https://slack.com/intl/ko-kr/help/articles/360035692513-Slack-%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C-%EB%B9%8C%EB%8D%94-%EA%B0%80%EC%9D%B4%EB%93%9C?utm_source=chatgpt.com)
 
 - 슬랙 워크플로 빌더를 이용하면, 메시지 트리거, 버튼 클릭 등으로 자동화 흐름을 시작할 수 있음
 - AI 앱 기능 활성화 및 슬랙 앱 등록 과정도 문서에 정리되어 있음
 
-2. ![참고 문서](https://www.make.com/en/integrations/slack/openai-gpt-3?utm_source=chatgpt.com)
+2. [참고 문서](https://www.make.com/en/integrations/slack/openai-gpt-3?utm_source=chatgpt.com)
 
 - Make의 Slack + OpenAI 모듈을 통해 메시지를 감지하고 자동으로 GPT 호출 → 슬랙 채널로 응답 전송 흐름을 구축할 수 있음
 - UI 기반으로 세팅이 가능하여 서버리스 방식 구현에 적합
 
-3. ![참고 문서](https://n8n.io/integrations/openai/and/slack/?utm_source=chatgpt.com)
+3. [참고 문서](https://n8n.io/integrations/openai/and/slack/?utm_source=chatgpt.com)
 
 - n8n은 **Slack 노드**와 **OpenAI 노드**를 제공하며, 이를 연결해 메시지 트리거 → GPT 호출 → 슬랙 메시지 게시 흐름을 만들 수 있음
 - 또한 공식 튜토리얼과 함께 **권한 설정, 노드 구성** 가이드가 명확하게 나와 있음
@@ -167,33 +167,37 @@ GPT의 역할 프레이밍(prompt engineering)을 통해 비판 없는 경청자
 
 ### 구현 사례
 
-- ![슬랙 워크플로우 빌더](https://www.reddit.com/r/OpenAI/comments/1fdprdj/i_created_a_gptpowered_slack_chatbot_to_onboard/?utm_source=chatgpt.com)
+- [슬랙 워크플로우 빌더](https://www.reddit.com/r/OpenAI/comments/1fdprdj/i_created_a_gptpowered_slack_chatbot_to_onboard/?utm_source=chatgpt.com)
   - 슬랙 워크플로우 빌더 + Runbear로 GPT 연결
   - 단순 메시지 트리거 + 응답 흐름만으로 코드 없이 구현
   - “less than an hour”만에 완성 가능
-- ![Node.js + Bolt](https://medium.com/globant/openai-slack-the-perfect-pair-for-smart-assistants-666ca1ad38f)
+- [Node.js + Bolt](https://medium.com/globant/openai-slack-the-perfect-pair-for-smart-assistants-666ca1ad38f)
   **블로그 요약**
   - Node.js + Bolt 프레임워크로 슬랙 앱 제작
   - OAuth 설정, GPT 호출, 채팅 흐름 구현 등 전 과정을 커버
 
-
 ## 퀘스트 4. AI 체크인
 
 ### 요구 사항
+
 - 베이직 체크인처럼, Chat-GPT에게 하루를 시작하면서 힘을 얻을 수 있는 명언 or 짧은 책 구절, 명상 or 동기부여하는 짧은 유튜브 영상을 추천받기
 - 이를 "루틴 시작해줘."로 자동 응답 받을 수 있는 프롬프트 작성하기
 
 ### 자료 조사
+
 - 프롬프트를 직접 작성해봄으로써 가능한지 확인
 
 <details>
 <summary><strong>입력 예시</strong></summary>
 
 🌤 **감정 기반 요청 예시**
+
 - 기분이 가라앉을 때:
+
   > 오늘은 좀 기운이 없어. 루틴 시작해줘.
 
 - 의욕이 부족할 때:
+
   > 뭔가 의욕이 안 나. 나를 다시 일으켜줄 자극적인 명언 하나랑 짧은 동기부여 영상 하나 추천해줘. 루틴 시작해줘.
 
 - 중요한 날 앞두고:
@@ -205,6 +209,7 @@ GPT의 역할 프레이밍(prompt engineering)을 통해 비판 없는 경청자
 <summary><strong>출력 예시</strong></summary>
 
 ## 출력 예시 1)
+
 > 🗣️ **일주일동안 루틴대로 너무 바쁘게 살았어. 오늘은 무기력하고 머리가 아프네. 힘나는 말을 해줘**
 
 물론이야. 오늘 기분과 상태를 반영한 오늘의 루틴을 아래와 같이 준비했어:
@@ -214,7 +219,7 @@ GPT의 역할 프레이밍(prompt engineering)을 통해 비판 없는 경청자
 ### 📖 책 속 한 구절
 
 > “기운이 없어 멈춘 하루에도, 나는 여전히 내 삶을 살고 있다.”
-> — 김수현, *《애쓰지 않고 편안하게》*
+> — 김수현, _《애쓰지 않고 편안하게》_
 
 ---
 
@@ -240,16 +245,18 @@ GPT의 역할 프레이밍(prompt engineering)을 통해 비판 없는 경청자
 
 ### 💡 오늘의 작은 제안
 
-* 영상 틀어놓고 **편하게 눈 감기**
-* 천천히 호흡에 집중해 보세요 (3초 들여 마시고, 5초 내쉬기 등)
-* 끝나고 나서는 따뜻한 차 한 잔이나 물 한 모금 마셔주고
-* **"오늘도 잘 버텨냈어"** 하고 스스로에게 인사해 주세요
+- 영상 틀어놓고 **편하게 눈 감기**
+- 천천히 호흡에 집중해 보세요 (3초 들여 마시고, 5초 내쉬기 등)
+- 끝나고 나서는 따뜻한 차 한 잔이나 물 한 모금 마셔주고
+- **"오늘도 잘 버텨냈어"** 하고 스스로에게 인사해 주세요
 
 오늘 하루는 버티고 있다는 게 큰 성과예요.
 필요하면 언제든 다시 말해줘요. 😊
 
 ---
+
 ## 출력 예시 2)
+
 > 🗣️ **오늘은 열정적으로 미션을 완수하고 싶어. 시작해줘**
 
 좋아요! 오늘은 **열정적으로 미션을 완수하고 싶은 날**이네요. 지금 바로 당신을 위한 **루틴**을 준비했어요.
@@ -259,7 +266,7 @@ GPT의 역할 프레이밍(prompt engineering)을 통해 비판 없는 경청자
 ### 📖 책 속 한 구절
 
 > “당신의 인생은 당신의 습관이 만든다. 매일의 작은 행동이 결국 큰 변화를 만든다.”
-> — 로빈 샤르마, *《5am 클럽》* ([en.wikipedia.org][1])
+> — 로빈 샤르마, _《5am 클럽》_ ([en.wikipedia.org][1])
 
 ---
 
@@ -282,9 +289,9 @@ GPT의 역할 프레이밍(prompt engineering)을 통해 비판 없는 경청자
 
 ### ✅ 오늘의 제안
 
-* 영상 보면서 **숨 깊게 들이쉬고, 마음 속 ‘할 수 있다’를 되뇌기**
-* 바로 **첫 번째 미션 한 개** 정하고, **지금 바로 착수**
-* 미션 완료 후 **작은 보상**: 좋아하는 음료, 스트레칭, 체조 등
+- 영상 보면서 **숨 깊게 들이쉬고, 마음 속 ‘할 수 있다’를 되뇌기**
+- 바로 **첫 번째 미션 한 개** 정하고, **지금 바로 착수**
+- 미션 완료 후 **작은 보상**: 좋아하는 음료, 스트레칭, 체조 등
 
 ---
 
@@ -295,4 +302,3 @@ GPT의 역할 프레이밍(prompt engineering)을 통해 비판 없는 경청자
 오늘도 멋지게 미션 달성해 봅시다! 🚀
 
 </details>
-
