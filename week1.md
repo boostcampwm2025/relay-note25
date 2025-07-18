@@ -69,14 +69,18 @@
 
 ### 구현 방법 조사
 
-![슬랙 워크플로 빌더](https://slack.com/intl/ko-kr/help/articles/360035692513-Slack-%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C-%EB%B9%8C%EB%8D%94-%EA%B0%80%EC%9D%B4%EB%93%9C?utm_source=chatgpt.com)
+1. ![슬랙 워크플로 빌더](https://slack.com/intl/ko-kr/help/articles/360035692513-Slack-%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C-%EB%B9%8C%EB%8D%94-%EA%B0%80%EC%9D%B4%EB%93%9C?utm_source=chatgpt.com)
 
 - 슬랙 워크플로 빌더를 이용하면, 메시지 트리거, 버튼 클릭 등으로 자동화 흐름을 시작할 수 있음
 - AI 앱 기능 활성화 및 슬랙 앱 등록 과정도 문서에 정리되어 있음
-  ![참고 문서](https://www.make.com/en/integrations/slack/openai-gpt-3?utm_source=chatgpt.com)
+
+2. ![참고 문서](https://www.make.com/en/integrations/slack/openai-gpt-3?utm_source=chatgpt.com)
+
 - Make의 Slack + OpenAI 모듈을 통해 메시지를 감지하고 자동으로 GPT 호출 → 슬랙 채널로 응답 전송 흐름을 구축할 수 있음
 - UI 기반으로 세팅이 가능하여 서버리스 방식 구현에 적합
-  ![참고 문서](https://n8n.io/integrations/openai/and/slack/?utm_source=chatgpt.com)
+
+3. ![참고 문서](https://n8n.io/integrations/openai/and/slack/?utm_source=chatgpt.com)
+
 - n8n은 **Slack 노드**와 **OpenAI 노드**를 제공하며, 이를 연결해 메시지 트리거 → GPT 호출 → 슬랙 메시지 게시 흐름을 만들 수 있음
 - 또한 공식 튜토리얼과 함께 **권한 설정, 노드 구성** 가이드가 명확하게 나와 있음
   | 선택지 | 추천 대상 | 장점 | 단점 |
