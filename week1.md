@@ -165,6 +165,18 @@ GPT의 역할 프레이밍(prompt engineering)을 통해 비판 없는 경청자
   | **2. n8n**([n8n.io](https://n8n.io/)) | 개발자 / 조건 분기·로직 제어가 중요한 경우 | - 자유도 매우 높음- 오픈소스 / 무료 가능 | - 설치형이면 인프라 필요, 처음엔 약간 복잡 |
   | **3. Slack Workflow Builder**([Slack 공식 기능](https://slack.com/help/articles/360035692513)) | 슬랙만으로 끝내고 싶은 경우 / 슬랙 외부 연결 최소화 | - 슬랙 UI 안에서만 구성 가능- 무설치/무개발 | - GPT 연결하려면 Make 등과 연동 필요 (단독으론 부족) |
 
+### 구현 사례
+
+- ![슬랙 워크플로우 빌더](https://www.reddit.com/r/OpenAI/comments/1fdprdj/i_created_a_gptpowered_slack_chatbot_to_onboard/?utm_source=chatgpt.com)
+  - 슬랙 워크플로우 빌더 + Runbear로 GPT 연결
+  - 단순 메시지 트리거 + 응답 흐름만으로 코드 없이 구현
+  - “less than an hour”만에 완성 가능
+- ![Node.js + Bolt](https://medium.com/globant/openai-slack-the-perfect-pair-for-smart-assistants-666ca1ad38f)
+  **블로그 요약**
+  - Node.js + Bolt 프레임워크로 슬랙 앱 제작
+  - OAuth 설정, GPT 호출, 채팅 흐름 구현 등 전 과정을 커버
+
+
 ## 퀘스트 4. AI 체크인
 
 ### 요구 사항
@@ -284,13 +296,3 @@ GPT의 역할 프레이밍(prompt engineering)을 통해 비판 없는 경청자
 
 </details>
 
-### 구현 사례
-
-- ![슬랙 워크플로우 빌더](https://www.reddit.com/r/OpenAI/comments/1fdprdj/i_created_a_gptpowered_slack_chatbot_to_onboard/?utm_source=chatgpt.com)
-  - 슬랙 워크플로우 빌더 + Runbear로 GPT 연결
-  - 단순 메시지 트리거 + 응답 흐름만으로 코드 없이 구현
-  - “less than an hour”만에 완성 가능
-- ![Node.js + Bolt](https://medium.com/globant/openai-slack-the-perfect-pair-for-smart-assistants-666ca1ad38f)
-  **블로그 요약**
-  - Node.js + Bolt 프레임워크로 슬랙 앱 제작
-  - OAuth 설정, GPT 호출, 채팅 흐름 구현 등 전 과정을 커버
