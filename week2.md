@@ -381,9 +381,9 @@ J292 홍재훈
 
 * **결과물:** 
 
----
+![상장 이미지](https://github-production-user-asset-6210df.s3.amazonaws.com/90647684/473256066-bc045b90-63d2-4d32-9325-a1e582a7e16f.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250801%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250801T022214Z&X-Amz-Expires=300&X-Amz-Signature=c03bc526e0719de7a8ec24f00623ebb84b359f5f72899ac0af58245157ad4d40&X-Amz-SignedHeaders=host)
 
-## 2️⃣ 단위 테스트 학습 관련 상
+---
 
 ### **프롬프트**
 
@@ -418,7 +418,9 @@ J292 홍재훈
 
 ### **AI 답변**
 
-* **결과물:** 
+* **결과물:**
+
+![상장 이미지](https://github-production-user-asset-6210df.s3.amazonaws.com/90647684/473256634-3555727d-1d0d-41c8-b6fb-fe967bc58303.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250801%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250801T022413Z&X-Amz-Expires=300&X-Amz-Signature=d3a12170db7e30153a37033acf0878f428b421254f957fc9853385f7861e880b&X-Amz-SignedHeaders=host)
 
 ---
 
