@@ -422,6 +422,12 @@ Linkin Park – Leave Out All the Rest
 
 ![상장 이미지](https://github-production-user-asset-6210df.s3.amazonaws.com/90647684/473256634-3555727d-1d0d-41c8-b6fb-fe967bc58303.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250801%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250801T022413Z&X-Amz-Expires=300&X-Amz-Signature=d3a12170db7e30153a37033acf0878f428b421254f957fc9853385f7861e880b&X-Amz-SignedHeaders=host)
 
+
+## 느낀점
+
+- 처음에는 상장을 한글로 만들고 싶었지만 결과물이 기대만큼 나오지 않아, 아직 AI가 한글을 다루는 데는 어려움이 있다는 것을 느꼈다. 하지만 이번 활동을 통해 AI가 단순한 도구를 넘어, 학습 과정에서 동기부여와 멘탈 코칭에도 충분히 도움이 될 수 있다는 점을 깨달았다.
+
+
 ---
 
 ## K016 서정우
