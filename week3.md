@@ -219,3 +219,9 @@
 > 샘플을 참고하여 노래를 만들어 보세요 🎵
 - [드디어 금요일](https://www.mureka.ai/ko/song-detail/LAbaeMfBvXgTq6zexo6hMB?is_from_share=1)
 - [눈을 뜨면 벌써 열두시](https://suno.com/song/46ec4b24-f0db-42f1-882b-d43ebafe458b?sh=5kCpdGB0D7kZXrHx)
+---
+## 퀘스트 선택과 그 이유
+
+### J011 - 퀘스트 1. AI로 채찍과 당근 받기
+
+항상 미션을 해결하는 것에 중점을 두다 보니 하루를 되돌아볼 기회가 많이 없었던 것 같다. 그래서 퀘스트를 통해서 하루를 좀 되돌아 보고 싶다.
